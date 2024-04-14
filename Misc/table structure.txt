@@ -1,4 +1,4 @@
-CREATE TABLE accidents (
+CREATE TABLE incidents (
         report_number VARCHAR(255),
         local_case_number VARCHAR(255),
         agency_name VARCHAR(255),
