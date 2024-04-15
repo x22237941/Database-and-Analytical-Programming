@@ -13,12 +13,12 @@ def connect_to_mysql(host, username, password, database):
         )
 
         if connection.is_connected():
-            print("Connected to MySQL database!")
+            #print("Connected to MySQL database!")
             return connection
         else:
-            print("Failed to connect to MySQL database.")
+            #print("Failed to connect to MySQL database.")
             return None
         
     except Exception as e:
-        print("Error:", e)
+        #print("Error:", e)
         return None
