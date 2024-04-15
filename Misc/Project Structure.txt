@@ -1,0 +1,26 @@
+Database and Analytical Programming
+|
+|
+|______Datasets
+|      |_________Drivers.csv
+|      |_________Incidents.csv
+|      |_________Non-Motorist.csv
+|
+|
+|______Connections
+|      |_________sqlconn.py
+|      |_________mongodb.py
+|
+|
+|______Scripts
+|      |_________drivers.ipynb
+|      |_________incidentsipynb
+|      |_________non-motorist.ipynb
+|
+|______main.py
+|
+|
+|______ppt/report
+|
+|
+|______Video
