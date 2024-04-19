@@ -1,0 +1,20 @@
+- Remove duplicates
+- Handle missing values
+- Convert data to a consistent format
+- Remove outliers
+- Remove or replace special characters
+- Validate data types
+- Validate constraints
+- Aggregate data
+- Normalize data
+- Derive new columns?
+- Check for data integrity
+- Validate referential integrity
+- Ensure that key fields are unique
+- Check for consistency between related fields
+- Check data distribution
+- Standardize text formatting
+- Standardize date and time formats
+- Standardize numeric formats
+- Lookup additional data
+- Geocode data
