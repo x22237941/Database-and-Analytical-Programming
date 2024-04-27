@@ -1,0 +1,204 @@
+2024-04-27 21:27:23,106 - INFO - logging already configured
+2024-04-27 21:27:23,108 - DEBUG - Checking if ETLPipeline() is complete
+2024-04-27 21:27:23,109 - DEBUG - Checking if FetchMongoDBData() is complete
+2024-04-27 21:27:23,109 - INFO - Informed scheduler that task   ETLPipeline__99914b932b   has status   PENDING
+2024-04-27 21:27:23,110 - DEBUG - Checking if LoadMongoDBData() is complete
+2024-04-27 21:27:23,111 - INFO - Informed scheduler that task   FetchMongoDBData__99914b932b   has status   PENDING
+2024-04-27 21:27:23,111 - DEBUG - Checking if TransformData() is complete
+2024-04-27 21:27:23,112 - INFO - Informed scheduler that task   LoadMongoDBData__99914b932b   has status   PENDING
+2024-04-27 21:27:23,112 - INFO - Informed scheduler that task   TransformData__99914b932b   has status   DONE
+2024-04-27 21:27:23,113 - INFO - Done scheduling tasks
+2024-04-27 21:27:23,113 - INFO - Running Worker with 1 processes
+2024-04-27 21:27:23,113 - DEBUG - Asking scheduler for work...
+2024-04-27 21:27:23,114 - DEBUG - Pending tasks: 3
+2024-04-27 21:27:23,114 - INFO - [pid 34396] Worker Worker(salt=7650770777, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=34396) running   LoadMongoDBData()
+2024-04-27 21:27:35,347 - INFO - [pid 34396] Worker Worker(salt=7650770777, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=34396) done      LoadMongoDBData()
+2024-04-27 21:27:35,349 - DEBUG - 1 running tasks, waiting for next task to finish
+2024-04-27 21:27:35,350 - INFO - Informed scheduler that task   LoadMongoDBData__99914b932b   has status   DONE
+2024-04-27 21:27:35,350 - DEBUG - Asking scheduler for work...
+2024-04-27 21:27:35,351 - DEBUG - Pending tasks: 2
+2024-04-27 21:27:35,352 - INFO - [pid 34396] Worker Worker(salt=7650770777, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=34396) running   FetchMongoDBData()
+2024-04-27 21:27:35,352 - ERROR - [pid 34396] Worker Worker(salt=7650770777, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=34396) failed    FetchMongoDBData()
+Traceback (most recent call last):
+  File "C:\Users\SANA JALGAONKAR\AppData\Local\Programs\Python\Python312\Lib\site-packages\luigi\worker.py", line 195, in run
+    raise RuntimeError('Unfulfilled %s at run time: %s' % (deps, ', '.join(missing)))
+RuntimeError: Unfulfilled dependency at run time: LoadMongoDBData__99914b932b
+2024-04-27 21:27:35,353 - DEBUG - 1 running tasks, waiting for next task to finish
+2024-04-27 21:27:35,355 - INFO - Informed scheduler that task   FetchMongoDBData__99914b932b   has status   FAILED
+2024-04-27 21:27:35,356 - DEBUG - Checking if FetchMongoDBData() is complete
+2024-04-27 21:27:35,356 - DEBUG - Checking if LoadMongoDBData() is complete
+2024-04-27 21:27:35,357 - INFO - Informed scheduler that task   FetchMongoDBData__99914b932b   has status   PENDING
+2024-04-27 21:27:35,357 - DEBUG - Checking if TransformData() is complete
+2024-04-27 21:27:35,358 - INFO - Informed scheduler that task   LoadMongoDBData__99914b932b   has status   PENDING
+2024-04-27 21:27:35,359 - INFO - Informed scheduler that task   TransformData__99914b932b   has status   DONE
+2024-04-27 21:27:35,359 - DEBUG - Asking scheduler for work...
+2024-04-27 21:27:35,360 - DEBUG - Pending tasks: 2
+2024-04-27 21:27:35,360 - INFO - [pid 34396] Worker Worker(salt=7650770777, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=34396) running   FetchMongoDBData()
+2024-04-27 21:27:35,361 - ERROR - [pid 34396] Worker Worker(salt=7650770777, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=34396) failed    FetchMongoDBData()
+Traceback (most recent call last):
+  File "C:\Users\SANA JALGAONKAR\AppData\Local\Programs\Python\Python312\Lib\site-packages\luigi\worker.py", line 195, in run
+    raise RuntimeError('Unfulfilled %s at run time: %s' % (deps, ', '.join(missing)))
+RuntimeError: Unfulfilled dependency at run time: LoadMongoDBData__99914b932b
+2024-04-27 21:27:35,362 - DEBUG - 1 running tasks, waiting for next task to finish
+2024-04-27 21:27:35,364 - INFO - Informed scheduler that task   FetchMongoDBData__99914b932b   has status   FAILED
+2024-04-27 21:27:35,365 - DEBUG - Asking scheduler for work...
+2024-04-27 21:27:35,366 - DEBUG - Done
+2024-04-27 21:27:35,366 - DEBUG - There are no more tasks to run at this time
+2024-04-27 21:27:35,367 - DEBUG - There are 2 pending tasks possibly being run by other workers
+2024-04-27 21:27:35,367 - DEBUG - There are 2 pending tasks unique to this worker
+2024-04-27 21:27:35,368 - DEBUG - There are 2 pending tasks last scheduled by this worker
+2024-04-27 21:27:35,368 - INFO - Worker Worker(salt=7650770777, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=34396) was stopped. Shutting down Keep-Alive thread
+2024-04-27 21:27:35,372 - INFO - 
+===== Luigi Execution Summary =====
+
+Scheduled 4 tasks of which:
+* 1 complete ones were encountered:
+    - 1 TransformData()
+* 1 ran successfully:
+    - 1 LoadMongoDBData()
+* 1 failed:
+    - 1 FetchMongoDBData()
+* 1 were left pending, among these:
+    * 1 had failed dependencies:
+        - 1 ETLPipeline()
+
+This progress looks :( because there were failed tasks
+
+===== Luigi Execution Summary =====
+
+2024-04-27 21:27:35,372 - INFO - ETL pipeline executed successfully.
+Pinged the MongoDB deployment. Successfully connected to MongoDB!
+Server is up and running.
+Databases:
+montgomery
+montgomery_reverse
+admin
+local
+
+Collections in montgomery :
+drivers
+non_motorists
+non_motorists_dataset
+incidents
+JSON data successfully loaded into MongoDB collection 'incidents' in database 'montgomery'.
+Total number of records in the collection: 4000
+2024-04-27 21:37:49,434 - INFO - logging already configured
+2024-04-27 21:37:49,435 - DEBUG - Checking if ETLPipeline() is complete
+2024-04-27 21:37:49,436 - DEBUG - Checking if FetchMongoDBData() is complete
+2024-04-27 21:37:49,437 - INFO - Informed scheduler that task   ETLPipeline__99914b932b   has status   PENDING
+2024-04-27 21:37:49,438 - DEBUG - Checking if LoadMongoDBData() is complete
+2024-04-27 21:37:49,438 - INFO - Informed scheduler that task   FetchMongoDBData__99914b932b   has status   PENDING
+2024-04-27 21:37:49,439 - DEBUG - Checking if TransformData() is complete
+2024-04-27 21:37:49,440 - INFO - Informed scheduler that task   LoadMongoDBData__99914b932b   has status   PENDING
+2024-04-27 21:37:49,440 - INFO - Informed scheduler that task   TransformData__99914b932b   has status   DONE
+2024-04-27 21:37:49,440 - INFO - Done scheduling tasks
+2024-04-27 21:37:49,441 - INFO - Running Worker with 1 processes
+2024-04-27 21:37:49,441 - DEBUG - Asking scheduler for work...
+2024-04-27 21:37:49,442 - DEBUG - Pending tasks: 3
+2024-04-27 21:37:49,442 - INFO - [pid 34396] Worker Worker(salt=6595804727, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=34396) running   LoadMongoDBData()
+2024-04-27 21:38:00,745 - INFO - [pid 34396] Worker Worker(salt=6595804727, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=34396) done      LoadMongoDBData()
+2024-04-27 21:38:00,746 - DEBUG - 1 running tasks, waiting for next task to finish
+2024-04-27 21:38:00,747 - INFO - Informed scheduler that task   LoadMongoDBData__99914b932b   has status   DONE
+2024-04-27 21:38:00,747 - DEBUG - Asking scheduler for work...
+2024-04-27 21:38:00,748 - DEBUG - Pending tasks: 2
+2024-04-27 21:38:00,749 - INFO - [pid 34396] Worker Worker(salt=6595804727, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=34396) running   FetchMongoDBData()
+2024-04-27 21:38:00,749 - ERROR - [pid 34396] Worker Worker(salt=6595804727, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=34396) failed    FetchMongoDBData()
+Traceback (most recent call last):
+  File "C:\Users\SANA JALGAONKAR\AppData\Local\Programs\Python\Python312\Lib\site-packages\luigi\worker.py", line 195, in run
+    raise RuntimeError('Unfulfilled %s at run time: %s' % (deps, ', '.join(missing)))
+RuntimeError: Unfulfilled dependency at run time: LoadMongoDBData__99914b932b
+2024-04-27 21:38:00,750 - DEBUG - 1 running tasks, waiting for next task to finish
+2024-04-27 21:38:00,752 - INFO - Informed scheduler that task   FetchMongoDBData__99914b932b   has status   FAILED
+2024-04-27 21:38:00,752 - DEBUG - Checking if FetchMongoDBData() is complete
+2024-04-27 21:38:00,753 - DEBUG - Checking if LoadMongoDBData() is complete
+2024-04-27 21:38:00,754 - INFO - Informed scheduler that task   FetchMongoDBData__99914b932b   has status   PENDING
+2024-04-27 21:38:00,754 - DEBUG - Checking if TransformData() is complete
+2024-04-27 21:38:00,755 - INFO - Informed scheduler that task   LoadMongoDBData__99914b932b   has status   PENDING
+2024-04-27 21:38:00,755 - INFO - Informed scheduler that task   TransformData__99914b932b   has status   DONE
+2024-04-27 21:38:00,756 - DEBUG - Asking scheduler for work...
+2024-04-27 21:38:00,756 - DEBUG - Pending tasks: 2
+2024-04-27 21:38:00,757 - INFO - [pid 34396] Worker Worker(salt=6595804727, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=34396) running   FetchMongoDBData()
+2024-04-27 21:38:00,757 - ERROR - [pid 34396] Worker Worker(salt=6595804727, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=34396) failed    FetchMongoDBData()
+Traceback (most recent call last):
+  File "C:\Users\SANA JALGAONKAR\AppData\Local\Programs\Python\Python312\Lib\site-packages\luigi\worker.py", line 195, in run
+    raise RuntimeError('Unfulfilled %s at run time: %s' % (deps, ', '.join(missing)))
+RuntimeError: Unfulfilled dependency at run time: LoadMongoDBData__99914b932b
+2024-04-27 21:38:00,758 - DEBUG - 1 running tasks, waiting for next task to finish
+2024-04-27 21:38:00,760 - INFO - Informed scheduler that task   FetchMongoDBData__99914b932b   has status   FAILED
+2024-04-27 21:38:00,760 - DEBUG - Asking scheduler for work...
+2024-04-27 21:38:00,761 - DEBUG - Done
+2024-04-27 21:38:00,761 - DEBUG - There are no more tasks to run at this time
+2024-04-27 21:38:00,761 - DEBUG - There are 2 pending tasks possibly being run by other workers
+2024-04-27 21:38:00,762 - DEBUG - There are 2 pending tasks unique to this worker
+2024-04-27 21:38:00,762 - DEBUG - There are 2 pending tasks last scheduled by this worker
+2024-04-27 21:38:00,763 - INFO - Worker Worker(salt=6595804727, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=34396) was stopped. Shutting down Keep-Alive thread
+2024-04-27 21:38:00,765 - INFO - 
+===== Luigi Execution Summary =====
+
+Scheduled 4 tasks of which:
+* 1 complete ones were encountered:
+    - 1 TransformData()
+* 1 ran successfully:
+    - 1 LoadMongoDBData()
+* 1 failed:
+    - 1 FetchMongoDBData()
+* 1 were left pending, among these:
+    * 1 had failed dependencies:
+        - 1 ETLPipeline()
+
+This progress looks :( because there were failed tasks
+
+===== Luigi Execution Summary =====
+
+2024-04-27 21:38:00,766 - INFO - ETL pipeline executed successfully.
+Pinged the MongoDB deployment. Successfully connected to MongoDB!
+Server is up and running.
+Databases:
+montgomery
+montgomery_reverse
+admin
+local
+
+Collections in montgomery :
+drivers
+non_motorists
+non_motorists_dataset
+incidents
+JSON data successfully loaded into MongoDB collection 'incidents' in database 'montgomery'.
+Total number of records in the collection: 5000
+2024-04-27 21:38:36,987 - INFO - logging already configured
+2024-04-27 21:38:36,989 - DEBUG - Checking if ETLPipeline() is complete
+2024-04-27 21:38:36,990 - DEBUG - Checking if FetchMongoDBData() is complete
+2024-04-27 21:38:36,991 - INFO - Informed scheduler that task   ETLPipeline__99914b932b   has status   PENDING
+2024-04-27 21:38:36,991 - INFO - Informed scheduler that task   FetchMongoDBData__99914b932b   has status   PENDING
+2024-04-27 21:38:36,992 - INFO - Done scheduling tasks
+2024-04-27 21:38:36,993 - INFO - Running Worker with 1 processes
+2024-04-27 21:38:36,993 - DEBUG - Asking scheduler for work...
+2024-04-27 21:38:36,993 - DEBUG - Pending tasks: 2
+2024-04-27 21:38:36,994 - INFO - [pid 34396] Worker Worker(salt=5016004777, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=34396) running   FetchMongoDBData()
+2024-04-27 21:38:42,188 - INFO - [pid 34396] Worker Worker(salt=5016004777, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=34396) done      FetchMongoDBData()
+2024-04-27 21:38:42,191 - DEBUG - 1 running tasks, waiting for next task to finish
+2024-04-27 21:38:42,191 - INFO - Informed scheduler that task   FetchMongoDBData__99914b932b   has status   DONE
+2024-04-27 21:38:42,192 - DEBUG - Asking scheduler for work...
+2024-04-27 21:38:42,192 - DEBUG - Pending tasks: 1
+2024-04-27 21:38:42,193 - INFO - [pid 34396] Worker Worker(salt=5016004777, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=34396) running   ETLPipeline()
+2024-04-27 21:38:42,194 - INFO - [pid 34396] Worker Worker(salt=5016004777, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=34396) done      ETLPipeline()
+2024-04-27 21:38:42,195 - DEBUG - 1 running tasks, waiting for next task to finish
+2024-04-27 21:38:42,195 - INFO - Informed scheduler that task   ETLPipeline__99914b932b   has status   DONE
+2024-04-27 21:38:42,195 - DEBUG - Asking scheduler for work...
+2024-04-27 21:38:42,196 - DEBUG - Done
+2024-04-27 21:38:42,196 - DEBUG - There are no more tasks to run at this time
+2024-04-27 21:38:42,197 - INFO - Worker Worker(salt=5016004777, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=34396) was stopped. Shutting down Keep-Alive thread
+2024-04-27 21:38:42,199 - INFO - 
+===== Luigi Execution Summary =====
+
+Scheduled 2 tasks of which:
+* 2 ran successfully:
+    - 1 ETLPipeline()
+    - 1 FetchMongoDBData()
+
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+2024-04-27 21:38:42,200 - INFO - ETL pipeline executed successfully.
