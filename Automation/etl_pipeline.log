@@ -1,72 +1,770 @@
-2024-04-27 21:27:23,106 - INFO - logging already configured
-2024-04-27 21:27:23,108 - DEBUG - Checking if ETLPipeline() is complete
-2024-04-27 21:27:23,109 - DEBUG - Checking if FetchMongoDBData() is complete
-2024-04-27 21:27:23,109 - INFO - Informed scheduler that task   ETLPipeline__99914b932b   has status   PENDING
-2024-04-27 21:27:23,110 - DEBUG - Checking if LoadMongoDBData() is complete
-2024-04-27 21:27:23,111 - INFO - Informed scheduler that task   FetchMongoDBData__99914b932b   has status   PENDING
-2024-04-27 21:27:23,111 - DEBUG - Checking if TransformData() is complete
-2024-04-27 21:27:23,112 - INFO - Informed scheduler that task   LoadMongoDBData__99914b932b   has status   PENDING
-2024-04-27 21:27:23,112 - INFO - Informed scheduler that task   TransformData__99914b932b   has status   DONE
-2024-04-27 21:27:23,113 - INFO - Done scheduling tasks
-2024-04-27 21:27:23,113 - INFO - Running Worker with 1 processes
-2024-04-27 21:27:23,113 - DEBUG - Asking scheduler for work...
-2024-04-27 21:27:23,114 - DEBUG - Pending tasks: 3
-2024-04-27 21:27:23,114 - INFO - [pid 34396] Worker Worker(salt=7650770777, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=34396) running   LoadMongoDBData()
-2024-04-27 21:27:35,347 - INFO - [pid 34396] Worker Worker(salt=7650770777, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=34396) done      LoadMongoDBData()
-2024-04-27 21:27:35,349 - DEBUG - 1 running tasks, waiting for next task to finish
-2024-04-27 21:27:35,350 - INFO - Informed scheduler that task   LoadMongoDBData__99914b932b   has status   DONE
-2024-04-27 21:27:35,350 - DEBUG - Asking scheduler for work...
-2024-04-27 21:27:35,351 - DEBUG - Pending tasks: 2
-2024-04-27 21:27:35,352 - INFO - [pid 34396] Worker Worker(salt=7650770777, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=34396) running   FetchMongoDBData()
-2024-04-27 21:27:35,352 - ERROR - [pid 34396] Worker Worker(salt=7650770777, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=34396) failed    FetchMongoDBData()
+2024-04-29 02:49:06,931 - INFO - logging configured by default settings
+DEBUG: Checking if FetchMongoDBData() is complete
+2024-04-29 02:49:06,937 - DEBUG - Checking if FetchMongoDBData() is complete
+DEBUG: Checking if LoadMongoDBData() is complete
+2024-04-29 02:49:06,938 - DEBUG - Checking if LoadMongoDBData() is complete
+C:\Users\SANA JALGAONKAR\AppData\Local\Programs\Python\Python312\Lib\site-packages\luigi\worker.py:426: UserWarning: Task LoadMongoDBData() without outputs has no custom complete() method
+  is_complete = task.complete()
+INFO: Informed scheduler that task   FetchMongoDBData__99914b932b   has status   PENDING
+2024-04-29 02:49:06,939 - INFO - Informed scheduler that task   FetchMongoDBData__99914b932b   has status   PENDING
+DEBUG: Checking if TransformData() is complete
+2024-04-29 02:49:06,940 - DEBUG - Checking if TransformData() is complete
+INFO: Informed scheduler that task   LoadMongoDBData__99914b932b   has status   PENDING
+2024-04-29 02:49:06,940 - INFO - Informed scheduler that task   LoadMongoDBData__99914b932b   has status   PENDING
+DEBUG: Checking if LoadMySQLData() is complete
+2024-04-29 02:49:06,940 - DEBUG - Checking if LoadMySQLData() is complete
+INFO: Informed scheduler that task   TransformData__99914b932b   has status   PENDING
+2024-04-29 02:49:06,941 - INFO - Informed scheduler that task   TransformData__99914b932b   has status   PENDING
+DEBUG: Checking if ExtractSocrataDataCSV() is complete
+2024-04-29 02:49:06,941 - DEBUG - Checking if ExtractSocrataDataCSV() is complete
+INFO: Informed scheduler that task   LoadMySQLData__99914b932b   has status   PENDING
+2024-04-29 02:49:06,941 - INFO - Informed scheduler that task   LoadMySQLData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   ExtractSocrataDataCSV__99914b932b   has status   PENDING
+2024-04-29 02:49:06,941 - INFO - Informed scheduler that task   ExtractSocrataDataCSV__99914b932b   has status   PENDING
+INFO: Done scheduling tasks
+2024-04-29 02:49:06,941 - INFO - Done scheduling tasks
+INFO: Running Worker with 1 processes
+2024-04-29 02:49:06,941 - INFO - Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+2024-04-29 02:49:06,941 - DEBUG - Asking scheduler for work...
+DEBUG: Pending tasks: 5
+2024-04-29 02:49:06,942 - DEBUG - Pending tasks: 5
+INFO: [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) running   ExtractSocrataDataCSV()
+2024-04-29 02:49:06,942 - INFO - [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) running   ExtractSocrataDataCSV()
+2024-04-29 02:49:06,942 - WARNING - Requests made without an app_token will be subject to strict throttling limits.
+INFO: [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) done      ExtractSocrataDataCSV()
+2024-04-29 02:49:08,929 - INFO - [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) done      ExtractSocrataDataCSV()
+DEBUG: 1 running tasks, waiting for next task to finish
+2024-04-29 02:49:08,930 - DEBUG - 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   ExtractSocrataDataCSV__99914b932b   has status   DONE
+2024-04-29 02:49:08,930 - INFO - Informed scheduler that task   ExtractSocrataDataCSV__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+2024-04-29 02:49:08,930 - DEBUG - Asking scheduler for work...
+DEBUG: Pending tasks: 4
+2024-04-29 02:49:08,930 - DEBUG - Pending tasks: 4
+INFO: [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) running   LoadMySQLData()
+2024-04-29 02:49:08,930 - INFO - [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) running   LoadMySQLData()
+C:\Users\SANA JALGAONKAR\AppData\Local\Temp\ipykernel_2100\549144210.py:158: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  sql_frame = pd.read_sql(read_data_query, conn)
+INFO: [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) done      LoadMySQLData()
+2024-04-29 02:49:09,291 - INFO - [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) done      LoadMySQLData()
+DEBUG: 1 running tasks, waiting for next task to finish
+2024-04-29 02:49:09,292 - DEBUG - 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   LoadMySQLData__99914b932b   has status   DONE
+2024-04-29 02:49:09,292 - INFO - Informed scheduler that task   LoadMySQLData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+2024-04-29 02:49:09,292 - DEBUG - Asking scheduler for work...
+DEBUG: Pending tasks: 3
+2024-04-29 02:49:09,292 - DEBUG - Pending tasks: 3
+INFO: [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) running   TransformData()
+2024-04-29 02:49:09,292 - INFO - [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) running   TransformData()
+-----------------------------------------------------------------------------
+Currently ExtractSocrataDataCSV is in progress
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+ExtractSocrataDataCSV Finished Successfully
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+Currently LoadMySQLData is in progress
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+Database created successfully
+-----------------------------------------------------------------------------
+report_number                    object
+local_case_number                 int64
+agency_name                      object
+acrs_report_type                 object
+crash_date_time                  object
+hit_run                          object
+lane_number                       int64
+number_of_lanes                   int64
+nontraffic                       object
+off_road_description             object
+at_fault                         object
+collision_type                   object
+weather                          object
+light                            object
+traffic_control                  object
+driver_substance_abuse           object
+first_harmful_event              object
+second_harmful_event             object
+fixed_oject_struck               object
+route_type                       object
+mile_point                      float64
+mile_point_direction             object
+lane_direction                   object
+direction                        object
+distance                        float64
+distance_unit                    object
+road_grade                       object
+road_name                        object
+cross_street_type                object
+cross_street_name                object
+municipality                     object
+surface_condition                object
+junction                         object
+intersection_type                object
+intersection_area                object
+road_alignment                   object
+road_condition                   object
+road_division                    object
+related_non_motorist             object
+non_motorist_substance_abuse     object
+lane_type                        object
+dtype: object
+-----------------------------------------------------------------------------
+incidents
+-----------------------------------------------------------------------------
+report_number - text
+local_case_number - text
+agency_name - text
+acrs_report_type - text
+crash_date_time - text
+hit_run - text
+lane_number - text
+number_of_lanes - text
+nontraffic - text
+off_road_description - text
+at_fault - text
+collision_type - text
+weather - text
+light - text
+traffic_control - text
+driver_substance_abuse - text
+first_harmful_event - text
+second_harmful_event - text
+fixed_oject_struck - text
+route_type - text
+mile_point - text
+mile_point_direction - text
+lane_direction - text
+direction - text
+distance - text
+distance_unit - text
+road_grade - text
+road_name - text
+cross_street_type - text
+cross_street_name - text
+municipality - text
+surface_condition - text
+junction - text
+intersection_type - text
+intersection_area - text
+road_alignment - text
+road_condition - text
+road_division - text
+related_non_motorist - text
+non_motorist_substance_abuse - text
+lane_type - text
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+Records inserted successfully
+-----------------------------------------------------------------------------
+Number of records in 'incidents' table: 1000
+-----------------------------------------------------------------------------
+LoadMySQLData finished successfully
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+TransformData is in progress and reading data from MySQL
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+Get the total number of records
+-----------------------------------------------------------------------------
+Number of rows: 1000
+Number of columns: 41
+-----------------------------------------------------------------------------
+Checking for Duplicate records
+-----------------------------------------------------------------------------
+Number of duplicate rows: 0
+-----------------------------------------------------------------------------
+Checking for 'Missing' Values
+-----------------------------------------------------------------------------
+Columns with 'Missing' values: ['off_road_description', 'collision_type', 'weather', 'light', 'traffic_control', 'driver_substance_abuse', 'first_harmful_event', 'second_harmful_event', 'fixed_oject_struck', 'route_type', 'mile_point', 'mile_point_direction', 'lane_direction', 'direction', 'distance', 'distance_unit', 'road_grade', 'road_name', 'cross_street_type', 'cross_street_name', 'municipality', 'surface_condition', 'junction', 'intersection_type', 'intersection_area', 'road_alignment', 'road_condition', 'road_division', 'related_non_motorist', 'non_motorist_substance_abuse', 'lane_type']
+Column: off_road_description
+off_road_description
+Missing                                                             890
+PARKING LOT OF 13031 WISTERIA DRIVE                                   1
+PARKING LOT OF 13850 GEORGIA AVE, SILVER SPRING, MD 20906             1
+PARKING LOT IN FRONT OF 18501 N. FREDERICK AVE                        1
+IN THE PARKING LOT OF STONEGATE ES                                    1
+                                                                   ... 
+IFO 12044 CHERRY HILL ROAD IN PARKING LOT                             1
+IFO 10116 RIVER ROAD, CHIPOTLE MEXICAN GRILL\nIN THE PARKING LOT      1
+PARKING LOT INFROT OF 2358 GLENMONT CIRCLE                            1
+5520 RANDOLPH RD, ROCKVILLE, MD 20852                                 1
+CABIN JOHN SHOPPING CENTER PARKING LOT.  7955 TUCKERMAN LANE.         1
+Name: count, Length: 111, dtype: int64
+-----------------------------------------------------------------------------
+Column: collision_type
+collision_type
+SAME DIR REAR END               248
+SINGLE VEHICLE                  171
+STRAIGHT MOVEMENT ANGLE         170
+OTHER                           127
+SAME DIRECTION SIDESWIPE        105
+HEAD ON LEFT TURN                55
+HEAD ON                          31
+SAME DIRECTION RIGHT TURN        19
+SAME DIRECTION LEFT TURN         18
+OPPOSITE DIRECTION SIDESWIPE     16
+ANGLE MEETS LEFT TURN            15
+Missing                           7
+UNKNOWN                           6
+SAME DIR BOTH LEFT TURN           5
+SAME DIR REND LEFT TURN           3
+ANGLE MEETS RIGHT TURN            2
+OPPOSITE DIR BOTH LEFT TURN       2
+Name: count, dtype: int64
+-----------------------------------------------------------------------------
+Column: weather
+weather
+CLEAR         621
+RAINING       156
+CLOUDY        108
+Missing        69
+FOGGY          23
+UNKNOWN         8
+SNOW            8
+OTHER           3
+SLEET           2
+WINTRY MIX      2
+Name: count, dtype: int64
+-----------------------------------------------------------------------------
+Column: light
+light
+DAYLIGHT                    485
+DARK LIGHTS ON              366
+DARK NO LIGHTS               63
+DAWN                         33
+DUSK                         21
+Missing                      15
+DARK -- UNKNOWN LIGHTING     12
+UNKNOWN                       4
+OTHER                         1
+Name: count, dtype: int64
+-----------------------------------------------------------------------------
+Column: traffic_control
+INFO: [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) done      TransformData()
+2024-04-29 02:49:09,327 - INFO - [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) done      TransformData()
+DEBUG: 1 running tasks, waiting for next task to finish
+2024-04-29 02:49:09,327 - DEBUG - 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   TransformData__99914b932b   has status   DONE
+2024-04-29 02:49:09,327 - INFO - Informed scheduler that task   TransformData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+2024-04-29 02:49:09,327 - DEBUG - Asking scheduler for work...
+DEBUG: Pending tasks: 2
+2024-04-29 02:49:09,327 - DEBUG - Pending tasks: 2
+INFO: [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) running   LoadMongoDBData()
+2024-04-29 02:49:09,327 - INFO - [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) running   LoadMongoDBData()
+INFO: [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) done      LoadMongoDBData()
+2024-04-29 02:49:18,772 - INFO - [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) done      LoadMongoDBData()
+DEBUG: 1 running tasks, waiting for next task to finish
+2024-04-29 02:49:18,772 - DEBUG - 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   LoadMongoDBData__99914b932b   has status   DONE
+2024-04-29 02:49:18,773 - INFO - Informed scheduler that task   LoadMongoDBData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+2024-04-29 02:49:18,773 - DEBUG - Asking scheduler for work...
+DEBUG: Pending tasks: 1
+2024-04-29 02:49:18,773 - DEBUG - Pending tasks: 1
+INFO: [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) running   FetchMongoDBData()
+2024-04-29 02:49:18,773 - INFO - [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) running   FetchMongoDBData()
+C:\Users\SANA JALGAONKAR\AppData\Local\Programs\Python\Python312\Lib\site-packages\luigi\worker.py:426: UserWarning: Task LoadMongoDBData() without outputs has no custom complete() method
+  is_complete = task.complete()
+ERROR: [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) failed    FetchMongoDBData()
 Traceback (most recent call last):
   File "C:\Users\SANA JALGAONKAR\AppData\Local\Programs\Python\Python312\Lib\site-packages\luigi\worker.py", line 195, in run
     raise RuntimeError('Unfulfilled %s at run time: %s' % (deps, ', '.join(missing)))
 RuntimeError: Unfulfilled dependency at run time: LoadMongoDBData__99914b932b
-2024-04-27 21:27:35,353 - DEBUG - 1 running tasks, waiting for next task to finish
-2024-04-27 21:27:35,355 - INFO - Informed scheduler that task   FetchMongoDBData__99914b932b   has status   FAILED
-2024-04-27 21:27:35,356 - DEBUG - Checking if FetchMongoDBData() is complete
-2024-04-27 21:27:35,356 - DEBUG - Checking if LoadMongoDBData() is complete
-2024-04-27 21:27:35,357 - INFO - Informed scheduler that task   FetchMongoDBData__99914b932b   has status   PENDING
-2024-04-27 21:27:35,357 - DEBUG - Checking if TransformData() is complete
-2024-04-27 21:27:35,358 - INFO - Informed scheduler that task   LoadMongoDBData__99914b932b   has status   PENDING
-2024-04-27 21:27:35,359 - INFO - Informed scheduler that task   TransformData__99914b932b   has status   DONE
-2024-04-27 21:27:35,359 - DEBUG - Asking scheduler for work...
-2024-04-27 21:27:35,360 - DEBUG - Pending tasks: 2
-2024-04-27 21:27:35,360 - INFO - [pid 34396] Worker Worker(salt=7650770777, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=34396) running   FetchMongoDBData()
-2024-04-27 21:27:35,361 - ERROR - [pid 34396] Worker Worker(salt=7650770777, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=34396) failed    FetchMongoDBData()
+2024-04-29 02:49:18,773 - ERROR - [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) failed    FetchMongoDBData()
 Traceback (most recent call last):
   File "C:\Users\SANA JALGAONKAR\AppData\Local\Programs\Python\Python312\Lib\site-packages\luigi\worker.py", line 195, in run
     raise RuntimeError('Unfulfilled %s at run time: %s' % (deps, ', '.join(missing)))
 RuntimeError: Unfulfilled dependency at run time: LoadMongoDBData__99914b932b
-2024-04-27 21:27:35,362 - DEBUG - 1 running tasks, waiting for next task to finish
-2024-04-27 21:27:35,364 - INFO - Informed scheduler that task   FetchMongoDBData__99914b932b   has status   FAILED
-2024-04-27 21:27:35,365 - DEBUG - Asking scheduler for work...
-2024-04-27 21:27:35,366 - DEBUG - Done
-2024-04-27 21:27:35,366 - DEBUG - There are no more tasks to run at this time
-2024-04-27 21:27:35,367 - DEBUG - There are 2 pending tasks possibly being run by other workers
-2024-04-27 21:27:35,367 - DEBUG - There are 2 pending tasks unique to this worker
-2024-04-27 21:27:35,368 - DEBUG - There are 2 pending tasks last scheduled by this worker
-2024-04-27 21:27:35,368 - INFO - Worker Worker(salt=7650770777, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=34396) was stopped. Shutting down Keep-Alive thread
-2024-04-27 21:27:35,372 - INFO - 
+DEBUG: 1 running tasks, waiting for next task to finish
+2024-04-29 02:49:18,774 - DEBUG - 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   FetchMongoDBData__99914b932b   has status   FAILED
+2024-04-29 02:49:18,775 - INFO - Informed scheduler that task   FetchMongoDBData__99914b932b   has status   FAILED
+DEBUG: Checking if FetchMongoDBData() is complete
+2024-04-29 02:49:18,776 - DEBUG - Checking if FetchMongoDBData() is complete
+DEBUG: Checking if LoadMongoDBData() is complete
+2024-04-29 02:49:18,776 - DEBUG - Checking if LoadMongoDBData() is complete
+INFO: Informed scheduler that task   FetchMongoDBData__99914b932b   has status   PENDING
+2024-04-29 02:49:18,776 - INFO - Informed scheduler that task   FetchMongoDBData__99914b932b   has status   PENDING
+DEBUG: Checking if TransformData() is complete
+2024-04-29 02:49:18,776 - DEBUG - Checking if TransformData() is complete
+INFO: Informed scheduler that task   LoadMongoDBData__99914b932b   has status   PENDING
+2024-04-29 02:49:18,776 - INFO - Informed scheduler that task   LoadMongoDBData__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   TransformData__99914b932b   has status   DONE
+2024-04-29 02:49:18,776 - INFO - Informed scheduler that task   TransformData__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+2024-04-29 02:49:18,776 - DEBUG - Asking scheduler for work...
+DEBUG: Pending tasks: 1
+2024-04-29 02:49:18,776 - DEBUG - Pending tasks: 1
+INFO: [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) running   FetchMongoDBData()
+2024-04-29 02:49:18,776 - INFO - [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) running   FetchMongoDBData()
+ERROR: [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) failed    FetchMongoDBData()
+Traceback (most recent call last):
+  File "C:\Users\SANA JALGAONKAR\AppData\Local\Programs\Python\Python312\Lib\site-packages\luigi\worker.py", line 195, in run
+    raise RuntimeError('Unfulfilled %s at run time: %s' % (deps, ', '.join(missing)))
+RuntimeError: Unfulfilled dependency at run time: LoadMongoDBData__99914b932b
+2024-04-29 02:49:18,777 - ERROR - [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) failed    FetchMongoDBData()
+Traceback (most recent call last):
+  File "C:\Users\SANA JALGAONKAR\AppData\Local\Programs\Python\Python312\Lib\site-packages\luigi\worker.py", line 195, in run
+    raise RuntimeError('Unfulfilled %s at run time: %s' % (deps, ', '.join(missing)))
+RuntimeError: Unfulfilled dependency at run time: LoadMongoDBData__99914b932b
+DEBUG: 1 running tasks, waiting for next task to finish
+2024-04-29 02:49:18,777 - DEBUG - 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   FetchMongoDBData__99914b932b   has status   FAILED
+2024-04-29 02:49:18,779 - INFO - Informed scheduler that task   FetchMongoDBData__99914b932b   has status   FAILED
+DEBUG: Asking scheduler for work...
+2024-04-29 02:49:18,779 - DEBUG - Asking scheduler for work...
+DEBUG: Done
+2024-04-29 02:49:18,779 - DEBUG - Done
+DEBUG: There are no more tasks to run at this time
+2024-04-29 02:49:18,779 - DEBUG - There are no more tasks to run at this time
+DEBUG: There are 1 pending tasks possibly being run by other workers
+2024-04-29 02:49:18,779 - DEBUG - There are 1 pending tasks possibly being run by other workers
+DEBUG: There are 1 pending tasks unique to this worker
+2024-04-29 02:49:18,779 - DEBUG - There are 1 pending tasks unique to this worker
+DEBUG: There are 1 pending tasks last scheduled by this worker
+2024-04-29 02:49:18,779 - DEBUG - There are 1 pending tasks last scheduled by this worker
+INFO: Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) was stopped. Shutting down Keep-Alive thread
+2024-04-29 02:49:18,779 - INFO - Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) was stopped. Shutting down Keep-Alive thread
+INFO: 
 ===== Luigi Execution Summary =====
 
-Scheduled 4 tasks of which:
-* 1 complete ones were encountered:
-    - 1 TransformData()
-* 1 ran successfully:
+Scheduled 5 tasks of which:
+* 4 ran successfully:
+    - 1 ExtractSocrataDataCSV()
     - 1 LoadMongoDBData()
+    - 1 LoadMySQLData()
+    - 1 TransformData()
 * 1 failed:
     - 1 FetchMongoDBData()
-* 1 were left pending, among these:
-    * 1 had failed dependencies:
-        - 1 ETLPipeline()
 
 This progress looks :( because there were failed tasks
 
 ===== Luigi Execution Summary =====
 
-2024-04-27 21:27:35,372 - INFO - ETL pipeline executed successfully.
+2024-04-29 02:49:18,780 - INFO - 
+===== Luigi Execution Summary =====
+
+Scheduled 5 tasks of which:
+* 4 ran successfully:
+    - 1 ExtractSocrataDataCSV()
+    - 1 LoadMongoDBData()
+    - 1 LoadMySQLData()
+    - 1 TransformData()
+* 1 failed:
+    - 1 FetchMongoDBData()
+
+This progress looks :( because there were failed tasks
+
+===== Luigi Execution Summary =====
+
+2024-04-29 02:49:18,780 - INFO - ETL pipeline executed successfully.
+traffic_control
+NO CONTROLS                454
+TRAFFIC SIGNAL             299
+Missing                    142
+STOP SIGN                   74
+FLASHING TRAFFIC SIGNAL     15
+OTHER                        7
+YIELD SIGN                   5
+UNKNOWN                      2
+RAILWAY CROSSING DEVICE      1
+PERSON                       1
+Name: count, dtype: int64
+-----------------------------------------------------------------------------
+Column: driver_substance_abuse
+driver_substance_abuse
+NONE DETECTED                            638
+Missing                                  151
+NONE DETECTED, UNKNOWN                    60
+UNKNOWN                                   53
+N/A, NONE DETECTED                        37
+ALCOHOL PRESENT                           17
+ALCOHOL PRESENT, NONE DETECTED            16
+ALCOHOL CONTRIBUTED                       11
+N/A, UNKNOWN                               6
+ALCOHOL PRESENT, N/A                       5
+ALCOHOL CONTRIBUTED, NONE DETECTED         2
+ALCOHOL CONTRIBUTED, N/A                   2
+ILLEGAL DRUG PRESENT, N/A                  1
+MEDICATION CONTRIBUTED, NONE DETECTED      1
+Name: count, dtype: int64
+-----------------------------------------------------------------------------
+Column: first_harmful_event
+first_harmful_event
+OTHER VEHICLE               676
+FIXED OBJECT                132
+PARKED VEHICLE               99
+PEDESTRIAN                   28
+OFF ROAD                     20
+Missing                      11
+OTHER OBJECT                  7
+BICYCLE                       7
+ANIMAL                        6
+OTHER                         5
+UNKNOWN                       2
+OVERTURN                      2
+UNITS SEPARATED               1
+THROWN OR FALLING OBJECT      1
+BACKING                       1
+EXPLOSION OR FIRE             1
+OTHER NON COLLISION           1
+Name: count, dtype: int64
+-----------------------------------------------------------------------------
+Column: second_harmful_event
+second_harmful_event
+Missing                728
+OTHER VEHICLE          119
+FIXED OBJECT            93
+PARKED VEHICLE          27
+OFF ROAD                 9
+OVERTURN                 8
+PEDESTRIAN               7
+UNKNOWN                  3
+OTHER OBJECT             2
+OTHER CONVEYANCE         2
+OTHER NON COLLISION      1
+OTHER                    1
+Name: count, dtype: int64
+-----------------------------------------------------------------------------
+Column: fixed_oject_struck
+fixed_oject_struck
+Missing                     752
+CURB                         66
+GUARDRAIL OR BARRIER         35
+OTHER                        31
+LIGHT SUPPORT POLE           22
+TREE SHRUBBERY               19
+OTHER POLE                   16
+SIGN SUPPORT POLE            13
+FENCE                         9
+MAILBOX                       7
+BUILDING                      7
+EMBANKMENT                    6
+DITCH                         6
+CONCRETE TRAFFIC BARRIER      5
+TRAFFIC SIGNAL SUPPORT        2
+CULVERT                       2
+OTHER TRAFFIC BARRIER         1
+UNKNOWN                       1
+Name: count, dtype: int64
+-----------------------------------------------------------------------------
+Column: route_type
+route_type
+Maryland (State)        408
+County                  351
+Missing                 117
+US (State)               47
+Municipality             45
+Interstate (State)       18
+Other Public Roadway      8
+Ramp                      4
+Government                2
+Name: count, dtype: int64
+-----------------------------------------------------------------------------
+Column: mile_point
+mile_point
+Missing    110
+0.0         67
+0.45        11
+0.51         8
+0.3          7
+          ... 
+3.88         1
+10.78        1
+3.51         1
+2.21         1
+4.96         1
+Name: count, Length: 466, dtype: int64
+-----------------------------------------------------------------------------
+Column: mile_point_direction
+mile_point_direction
+North      456
+East       276
+Missing    117
+South       88
+West        63
+Name: count, dtype: int64
+-----------------------------------------------------------------------------
+Column: lane_direction
+lane_direction
+North      268
+South      263
+East       187
+West       166
+Missing    110
+Unknown      6
+Name: count, dtype: int64
+-----------------------------------------------------------------------------
+Column: direction
+direction
+North      358
+East       214
+South      191
+West       127
+Missing    110
+Name: count, dtype: int64
+-----------------------------------------------------------------------------
+Column: distance
+distance
+0.0        444
+Missing    110
+100.0       69
+50.0        60
+20.0        31
+10.0        29
+200.0       28
+500.0       23
+25.0        19
+300.0       19
+5.0         17
+150.0       15
+0.25        14
+0.1         13
+0.5         11
+40.0        10
+1.0          8
+30.0         8
+15.0         7
+0.2          7
+0.3          5
+75.0         5
+900.0        4
+60.0         3
+600.0        3
+250.0        3
+3.0          2
+400.0        2
+2.0          2
+45.0         2
+1.3          1
+0.02         1
+155.0        1
+101.0        1
+0.16         1
+0.14         1
+1.4          1
+800.0        1
+131.0        1
+0.31         1
+70.0         1
+350.0        1
+0.75         1
+694.0        1
+517.0        1
+141.0        1
+280.0        1
+0.19         1
+450.0        1
+0.04         1
+0.27         1
+415.0        1
+2.7          1
+180.0        1
+35.0         1
+0.15         1
+340.0        1
+Name: count, dtype: int64
+-----------------------------------------------------------------------------
+Column: distance_unit
+distance_unit
+FEET       817
+Missing    110
+MILE        65
+UNKNOWN      8
+Name: count, dtype: int64
+-----------------------------------------------------------------------------
+Column: road_grade
+road_grade
+LEVEL             720
+Missing           119
+GRADE DOWNHILL     87
+HILL UPHILL        46
+HILL CREST         20
+OTHER               4
+DIP SAG             2
+ON BRIDGE           1
+UNKNOWN             1
+Name: count, dtype: int64
+-----------------------------------------------------------------------------
+Column: road_name
+road_name
+Missing              110
+GEORGIA AVE           47
+NEW HAMPSHIRE AVE     35
+FREDERICK RD          35
+COLUMBIA PIKE         33
+                    ... 
+ADELPHI RD             1
+FREDALE ST             1
+DALEWOOD DR            1
+RUATAN ST              1
+ELMCROFT BLVD          1
+Name: count, Length: 307, dtype: int64
+-----------------------------------------------------------------------------
+Column: cross_street_type
+cross_street_type
+County                  512
+Missing                 117
+Municipality            112
+Maryland (State)        109
+Unknown                  76
+Ramp                     43
+Other Public Roadway     19
+Government                6
+US (State)                3
+Interstate (State)        3
+Name: count, dtype: int64
+-----------------------------------------------------------------------------
+Column: cross_street_name
+cross_street_name
+Missing                                  110
+VEIRS MILL RD                             13
+GREAT SENECA HWY                           8
+CONNECTICUT AVE                            8
+TUCKERMAN LA                               7
+                                        ... 
+SIERRA ST                                  1
+BROOKE RD                                  1
+RALPH RD                                   1
+RAMP 8 FR RAMP 5 TO RAMP 1 (TO IS370)      1
+BUSHEY DR                                  1
+Name: count, Length: 604, dtype: int64
+-----------------------------------------------------------------------------
+Column: municipality
+municipality
+Missing               888
+ROCKVILLE              55
+GAITHERSBURG           40
+TAKOMA PARK             7
+KENSINGTON              4
+CHEVY CHASE VIEW        2
+POOLESVILLE             1
+GARRETT PARK            1
+CHEVY CHASE #3          1
+FRIENDSHIP HEIGHTS      1
+Name: count, dtype: int64
+-----------------------------------------------------------------------------
+Column: surface_condition
+surface_condition
+DRY                       618
+WET                       228
+Missing                   137
+ICE                        10
+WATER(STANDING/MOVING)      2
+UNKNOWN                     2
+SLUSH                       2
+SNOW                        1
+Name: count, dtype: int64
+-----------------------------------------------------------------------------
+Column: junction
+junction
+INTERSECTION            350
+Missing                 281
+NON INTERSECTION        230
+INTERSECTION RELATED     98
+INTERCHANGE RELATED      14
+OTHER                    13
+COMMERCIAL DRIVEWAY       7
+OTHER DRIVEWAY            3
+CROSSOVER RELATED         3
+RESIDENTIAL DRIVEWAY      1
+Name: count, dtype: int64
+-----------------------------------------------------------------------------
+Column: intersection_type
+intersection_type
+Missing                  495
+FOUR-WAY INTERSECTION    335
+T-INTERSECTION           133
+OTHER                     22
+Y-INTERSECTION             7
+FIVE-POINT OR MORE         4
+ROUNDABOUT                 4
+Name: count, dtype: int64
+-----------------------------------------------------------------------------
+Column: intersection_area
+intersection_area
+Missing                  731
+INTERSECTION             172
+INTERSECTION RELATED      61
+OTHER                     12
+ON RAMP ENTRANCE AREA     11
+THRU ROADWAY               9
+ON RAMP MID AREA           2
+ON RAMP EXIT AREA          2
+Name: count, dtype: int64
+-----------------------------------------------------------------------------
+Column: road_alignment
+road_alignment
+STRAIGHT       781
+Missing        114
+CURVE LEFT      57
+CURVE RIGHT     41
+OTHER            5
+UNKNOWN          2
+Name: count, dtype: int64
+-----------------------------------------------------------------------------
+Column: road_condition
+road_condition
+NO DEFECTS          850
+Missing             140
+FOREIGN MATERIAL      2
+OTHER                 2
+VIEW OBSTRUCTED       2
+HOLES RUTS ETC        2
+UNKNOWN               1
+SHOULDER DEFECT       1
+Name: count, dtype: int64
+-----------------------------------------------------------------------------
+Column: road_division
+road_division
+TWO-WAY, DIVIDED, POSITIVE MEDIAN BARRIER           428
+TWO-WAY, NOT DIVIDED                                310
+Missing                                             118
+TWO-WAY, DIVIDED, UNPROTECTED PAINTED MIN 4 FEET     99
+ONE-WAY TRAFFICWAY                                   27
+OTHER                                                15
+TWO-WAY, NOT DIVIDED WITH A CONTINUOUS LEFT TURN      3
+Name: count, dtype: int64
+-----------------------------------------------------------------------------
+Column: related_non_motorist
+related_non_motorist
+Missing       958
+PEDESTRIAN     32
+BICYCLIST       7
+OTHER           3
+Name: count, dtype: int64
+-----------------------------------------------------------------------------
+Column: non_motorist_substance_abuse
+non_motorist_substance_abuse
+Missing            969
+NONE DETECTED       29
+UNKNOWN              1
+ALCOHOL PRESENT      1
+Name: count, dtype: int64
+-----------------------------------------------------------------------------
+Column: lane_type
+lane_type
+Missing              894
+LEFT TURN LANE        39
+RIGHT TURN LANE       17
+CROSSOVER AREA        10
+OTHER                 10
+MEDIAN AREA            7
+OFF ROAD               7
+SHOULDER AREA          6
+UNKNOWN                5
+ON RAMP                4
+ACCELERATION LANE      1
+Name: count, dtype: int64
+-----------------------------------------------------------------------------
+Remaining columns after dropping:
+['report_number', 'local_case_number', 'agency_name', 'acrs_report_type', 'crash_date_time', 'hit_run', 'lane_number', 'number_of_lanes', 'nontraffic', 'at_fault', 'collision_type', 'weather', 'light', 'traffic_control', 'driver_substance_abuse', 'route_type', 'mile_point', 'lane_direction', 'direction', 'distance', 'distance_unit', 'road_grade', 'road_name', 'cross_street_type', 'municipality', 'surface_condition', 'junction', 'intersection_type', 'road_alignment', 'road_condition']
+--------------------------------------------------
 Pinged the MongoDB deployment. Successfully connected to MongoDB!
 Server is up and running.
 Databases:
@@ -81,124 +779,7 @@ non_motorists
 non_motorists_dataset
 incidents
 JSON data successfully loaded into MongoDB collection 'incidents' in database 'montgomery'.
-Total number of records in the collection: 4000
-2024-04-27 21:37:49,434 - INFO - logging already configured
-2024-04-27 21:37:49,435 - DEBUG - Checking if ETLPipeline() is complete
-2024-04-27 21:37:49,436 - DEBUG - Checking if FetchMongoDBData() is complete
-2024-04-27 21:37:49,437 - INFO - Informed scheduler that task   ETLPipeline__99914b932b   has status   PENDING
-2024-04-27 21:37:49,438 - DEBUG - Checking if LoadMongoDBData() is complete
-2024-04-27 21:37:49,438 - INFO - Informed scheduler that task   FetchMongoDBData__99914b932b   has status   PENDING
-2024-04-27 21:37:49,439 - DEBUG - Checking if TransformData() is complete
-2024-04-27 21:37:49,440 - INFO - Informed scheduler that task   LoadMongoDBData__99914b932b   has status   PENDING
-2024-04-27 21:37:49,440 - INFO - Informed scheduler that task   TransformData__99914b932b   has status   DONE
-2024-04-27 21:37:49,440 - INFO - Done scheduling tasks
-2024-04-27 21:37:49,441 - INFO - Running Worker with 1 processes
-2024-04-27 21:37:49,441 - DEBUG - Asking scheduler for work...
-2024-04-27 21:37:49,442 - DEBUG - Pending tasks: 3
-2024-04-27 21:37:49,442 - INFO - [pid 34396] Worker Worker(salt=6595804727, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=34396) running   LoadMongoDBData()
-2024-04-27 21:38:00,745 - INFO - [pid 34396] Worker Worker(salt=6595804727, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=34396) done      LoadMongoDBData()
-2024-04-27 21:38:00,746 - DEBUG - 1 running tasks, waiting for next task to finish
-2024-04-27 21:38:00,747 - INFO - Informed scheduler that task   LoadMongoDBData__99914b932b   has status   DONE
-2024-04-27 21:38:00,747 - DEBUG - Asking scheduler for work...
-2024-04-27 21:38:00,748 - DEBUG - Pending tasks: 2
-2024-04-27 21:38:00,749 - INFO - [pid 34396] Worker Worker(salt=6595804727, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=34396) running   FetchMongoDBData()
-2024-04-27 21:38:00,749 - ERROR - [pid 34396] Worker Worker(salt=6595804727, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=34396) failed    FetchMongoDBData()
-Traceback (most recent call last):
-  File "C:\Users\SANA JALGAONKAR\AppData\Local\Programs\Python\Python312\Lib\site-packages\luigi\worker.py", line 195, in run
-    raise RuntimeError('Unfulfilled %s at run time: %s' % (deps, ', '.join(missing)))
-RuntimeError: Unfulfilled dependency at run time: LoadMongoDBData__99914b932b
-2024-04-27 21:38:00,750 - DEBUG - 1 running tasks, waiting for next task to finish
-2024-04-27 21:38:00,752 - INFO - Informed scheduler that task   FetchMongoDBData__99914b932b   has status   FAILED
-2024-04-27 21:38:00,752 - DEBUG - Checking if FetchMongoDBData() is complete
-2024-04-27 21:38:00,753 - DEBUG - Checking if LoadMongoDBData() is complete
-2024-04-27 21:38:00,754 - INFO - Informed scheduler that task   FetchMongoDBData__99914b932b   has status   PENDING
-2024-04-27 21:38:00,754 - DEBUG - Checking if TransformData() is complete
-2024-04-27 21:38:00,755 - INFO - Informed scheduler that task   LoadMongoDBData__99914b932b   has status   PENDING
-2024-04-27 21:38:00,755 - INFO - Informed scheduler that task   TransformData__99914b932b   has status   DONE
-2024-04-27 21:38:00,756 - DEBUG - Asking scheduler for work...
-2024-04-27 21:38:00,756 - DEBUG - Pending tasks: 2
-2024-04-27 21:38:00,757 - INFO - [pid 34396] Worker Worker(salt=6595804727, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=34396) running   FetchMongoDBData()
-2024-04-27 21:38:00,757 - ERROR - [pid 34396] Worker Worker(salt=6595804727, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=34396) failed    FetchMongoDBData()
-Traceback (most recent call last):
-  File "C:\Users\SANA JALGAONKAR\AppData\Local\Programs\Python\Python312\Lib\site-packages\luigi\worker.py", line 195, in run
-    raise RuntimeError('Unfulfilled %s at run time: %s' % (deps, ', '.join(missing)))
-RuntimeError: Unfulfilled dependency at run time: LoadMongoDBData__99914b932b
-2024-04-27 21:38:00,758 - DEBUG - 1 running tasks, waiting for next task to finish
-2024-04-27 21:38:00,760 - INFO - Informed scheduler that task   FetchMongoDBData__99914b932b   has status   FAILED
-2024-04-27 21:38:00,760 - DEBUG - Asking scheduler for work...
-2024-04-27 21:38:00,761 - DEBUG - Done
-2024-04-27 21:38:00,761 - DEBUG - There are no more tasks to run at this time
-2024-04-27 21:38:00,761 - DEBUG - There are 2 pending tasks possibly being run by other workers
-2024-04-27 21:38:00,762 - DEBUG - There are 2 pending tasks unique to this worker
-2024-04-27 21:38:00,762 - DEBUG - There are 2 pending tasks last scheduled by this worker
-2024-04-27 21:38:00,763 - INFO - Worker Worker(salt=6595804727, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=34396) was stopped. Shutting down Keep-Alive thread
-2024-04-27 21:38:00,765 - INFO - 
-===== Luigi Execution Summary =====
-
-Scheduled 4 tasks of which:
-* 1 complete ones were encountered:
-    - 1 TransformData()
-* 1 ran successfully:
-    - 1 LoadMongoDBData()
-* 1 failed:
-    - 1 FetchMongoDBData()
-* 1 were left pending, among these:
-    * 1 had failed dependencies:
-        - 1 ETLPipeline()
-
-This progress looks :( because there were failed tasks
-
-===== Luigi Execution Summary =====
-
-2024-04-27 21:38:00,766 - INFO - ETL pipeline executed successfully.
-Pinged the MongoDB deployment. Successfully connected to MongoDB!
-Server is up and running.
-Databases:
-montgomery
-montgomery_reverse
-admin
-local
-
-Collections in montgomery :
-drivers
-non_motorists
-non_motorists_dataset
-incidents
-JSON data successfully loaded into MongoDB collection 'incidents' in database 'montgomery'.
-Total number of records in the collection: 5000
-2024-04-27 21:38:36,987 - INFO - logging already configured
-2024-04-27 21:38:36,989 - DEBUG - Checking if ETLPipeline() is complete
-2024-04-27 21:38:36,990 - DEBUG - Checking if FetchMongoDBData() is complete
-2024-04-27 21:38:36,991 - INFO - Informed scheduler that task   ETLPipeline__99914b932b   has status   PENDING
-2024-04-27 21:38:36,991 - INFO - Informed scheduler that task   FetchMongoDBData__99914b932b   has status   PENDING
-2024-04-27 21:38:36,992 - INFO - Done scheduling tasks
-2024-04-27 21:38:36,993 - INFO - Running Worker with 1 processes
-2024-04-27 21:38:36,993 - DEBUG - Asking scheduler for work...
-2024-04-27 21:38:36,993 - DEBUG - Pending tasks: 2
-2024-04-27 21:38:36,994 - INFO - [pid 34396] Worker Worker(salt=5016004777, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=34396) running   FetchMongoDBData()
-2024-04-27 21:38:42,188 - INFO - [pid 34396] Worker Worker(salt=5016004777, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=34396) done      FetchMongoDBData()
-2024-04-27 21:38:42,191 - DEBUG - 1 running tasks, waiting for next task to finish
-2024-04-27 21:38:42,191 - INFO - Informed scheduler that task   FetchMongoDBData__99914b932b   has status   DONE
-2024-04-27 21:38:42,192 - DEBUG - Asking scheduler for work...
-2024-04-27 21:38:42,192 - DEBUG - Pending tasks: 1
-2024-04-27 21:38:42,193 - INFO - [pid 34396] Worker Worker(salt=5016004777, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=34396) running   ETLPipeline()
-2024-04-27 21:38:42,194 - INFO - [pid 34396] Worker Worker(salt=5016004777, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=34396) done      ETLPipeline()
-2024-04-27 21:38:42,195 - DEBUG - 1 running tasks, waiting for next task to finish
-2024-04-27 21:38:42,195 - INFO - Informed scheduler that task   ETLPipeline__99914b932b   has status   DONE
-2024-04-27 21:38:42,195 - DEBUG - Asking scheduler for work...
-2024-04-27 21:38:42,196 - DEBUG - Done
-2024-04-27 21:38:42,196 - DEBUG - There are no more tasks to run at this time
-2024-04-27 21:38:42,197 - INFO - Worker Worker(salt=5016004777, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=34396) was stopped. Shutting down Keep-Alive thread
-2024-04-27 21:38:42,199 - INFO - 
-===== Luigi Execution Summary =====
-
-Scheduled 2 tasks of which:
-* 2 ran successfully:
-    - 1 ETLPipeline()
-    - 1 FetchMongoDBData()
-
-This progress looks :) because there were no failed tasks or missing dependencies
-
-===== Luigi Execution Summary =====
-
-2024-04-27 21:38:42,200 - INFO - ETL pipeline executed successfully.
+Total number of records in the collection: 7000
+-----------------------------------------------------------------------------
+Data Loaded into MongoDB Moving onto fetching
+-----------------------------------------------------------------------------
