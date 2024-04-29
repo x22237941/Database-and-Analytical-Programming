@@ -1,65 +1,63 @@
-2024-04-27 04:00:52,432 - INFO - logging configured by default settings
-DEBUG: Checking if ETLPipeline() is complete
-2024-04-27 04:00:52,438 - DEBUG - Checking if ETLPipeline() is complete
-C:\Users\SANA JALGAONKAR\AppData\Local\Programs\Python\Python312\Lib\site-packages\luigi\worker.py:426: UserWarning: Task ETLPipeline() without outputs has no custom complete() method
-  is_complete = task.complete()
+2024-04-29 02:49:06,931 - INFO - logging configured by default settings
+DEBUG: Checking if FetchMongoDBData() is complete
+2024-04-29 02:49:06,937 - DEBUG - Checking if FetchMongoDBData() is complete
 DEBUG: Checking if LoadMongoDBData() is complete
-2024-04-27 04:00:52,439 - DEBUG - Checking if LoadMongoDBData() is complete
+2024-04-29 02:49:06,938 - DEBUG - Checking if LoadMongoDBData() is complete
 C:\Users\SANA JALGAONKAR\AppData\Local\Programs\Python\Python312\Lib\site-packages\luigi\worker.py:426: UserWarning: Task LoadMongoDBData() without outputs has no custom complete() method
   is_complete = task.complete()
-INFO: Informed scheduler that task   ETLPipeline__99914b932b   has status   PENDING
-2024-04-27 04:00:52,440 - INFO - Informed scheduler that task   ETLPipeline__99914b932b   has status   PENDING
+INFO: Informed scheduler that task   FetchMongoDBData__99914b932b   has status   PENDING
+2024-04-29 02:49:06,939 - INFO - Informed scheduler that task   FetchMongoDBData__99914b932b   has status   PENDING
 DEBUG: Checking if TransformData() is complete
-2024-04-27 04:00:52,440 - DEBUG - Checking if TransformData() is complete
+2024-04-29 02:49:06,940 - DEBUG - Checking if TransformData() is complete
 INFO: Informed scheduler that task   LoadMongoDBData__99914b932b   has status   PENDING
-2024-04-27 04:00:52,441 - INFO - Informed scheduler that task   LoadMongoDBData__99914b932b   has status   PENDING
+2024-04-29 02:49:06,940 - INFO - Informed scheduler that task   LoadMongoDBData__99914b932b   has status   PENDING
 DEBUG: Checking if LoadMySQLData() is complete
-2024-04-27 04:00:52,441 - DEBUG - Checking if LoadMySQLData() is complete
+2024-04-29 02:49:06,940 - DEBUG - Checking if LoadMySQLData() is complete
 INFO: Informed scheduler that task   TransformData__99914b932b   has status   PENDING
-2024-04-27 04:00:52,441 - INFO - Informed scheduler that task   TransformData__99914b932b   has status   PENDING
+2024-04-29 02:49:06,941 - INFO - Informed scheduler that task   TransformData__99914b932b   has status   PENDING
 DEBUG: Checking if ExtractSocrataDataCSV() is complete
-2024-04-27 04:00:52,441 - DEBUG - Checking if ExtractSocrataDataCSV() is complete
+2024-04-29 02:49:06,941 - DEBUG - Checking if ExtractSocrataDataCSV() is complete
 INFO: Informed scheduler that task   LoadMySQLData__99914b932b   has status   PENDING
-2024-04-27 04:00:52,442 - INFO - Informed scheduler that task   LoadMySQLData__99914b932b   has status   PENDING
+2024-04-29 02:49:06,941 - INFO - Informed scheduler that task   LoadMySQLData__99914b932b   has status   PENDING
 INFO: Informed scheduler that task   ExtractSocrataDataCSV__99914b932b   has status   PENDING
-2024-04-27 04:00:52,442 - INFO - Informed scheduler that task   ExtractSocrataDataCSV__99914b932b   has status   PENDING
+2024-04-29 02:49:06,941 - INFO - Informed scheduler that task   ExtractSocrataDataCSV__99914b932b   has status   PENDING
 INFO: Done scheduling tasks
-2024-04-27 04:00:52,442 - INFO - Done scheduling tasks
+2024-04-29 02:49:06,941 - INFO - Done scheduling tasks
 INFO: Running Worker with 1 processes
-2024-04-27 04:00:52,442 - INFO - Running Worker with 1 processes
+2024-04-29 02:49:06,941 - INFO - Running Worker with 1 processes
 DEBUG: Asking scheduler for work...
-2024-04-27 04:00:52,442 - DEBUG - Asking scheduler for work...
+2024-04-29 02:49:06,941 - DEBUG - Asking scheduler for work...
 DEBUG: Pending tasks: 5
-2024-04-27 04:00:52,442 - DEBUG - Pending tasks: 5
-INFO: [pid 16712] Worker Worker(salt=9373937654, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=16712) running   ExtractSocrataDataCSV()
-2024-04-27 04:00:52,442 - INFO - [pid 16712] Worker Worker(salt=9373937654, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=16712) running   ExtractSocrataDataCSV()
-2024-04-27 04:00:52,443 - WARNING - Requests made without an app_token will be subject to strict throttling limits.
-INFO: [pid 16712] Worker Worker(salt=9373937654, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=16712) done      ExtractSocrataDataCSV()
-2024-04-27 04:00:56,944 - INFO - [pid 16712] Worker Worker(salt=9373937654, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=16712) done      ExtractSocrataDataCSV()
+2024-04-29 02:49:06,942 - DEBUG - Pending tasks: 5
+INFO: [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) running   ExtractSocrataDataCSV()
+2024-04-29 02:49:06,942 - INFO - [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) running   ExtractSocrataDataCSV()
+2024-04-29 02:49:06,942 - WARNING - Requests made without an app_token will be subject to strict throttling limits.
+INFO: [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) done      ExtractSocrataDataCSV()
+2024-04-29 02:49:08,929 - INFO - [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) done      ExtractSocrataDataCSV()
 DEBUG: 1 running tasks, waiting for next task to finish
-2024-04-27 04:00:56,945 - DEBUG - 1 running tasks, waiting for next task to finish
+2024-04-29 02:49:08,930 - DEBUG - 1 running tasks, waiting for next task to finish
 INFO: Informed scheduler that task   ExtractSocrataDataCSV__99914b932b   has status   DONE
-2024-04-27 04:00:56,945 - INFO - Informed scheduler that task   ExtractSocrataDataCSV__99914b932b   has status   DONE
+2024-04-29 02:49:08,930 - INFO - Informed scheduler that task   ExtractSocrataDataCSV__99914b932b   has status   DONE
 DEBUG: Asking scheduler for work...
-2024-04-27 04:00:56,945 - DEBUG - Asking scheduler for work...
+2024-04-29 02:49:08,930 - DEBUG - Asking scheduler for work...
 DEBUG: Pending tasks: 4
-2024-04-27 04:00:56,945 - DEBUG - Pending tasks: 4
-INFO: [pid 16712] Worker Worker(salt=9373937654, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=16712) running   LoadMySQLData()
-2024-04-27 04:00:56,945 - INFO - [pid 16712] Worker Worker(salt=9373937654, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=16712) running   LoadMySQLData()
-C:\Users\SANA JALGAONKAR\AppData\Local\Temp\ipykernel_16712\549144210.py:158: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+2024-04-29 02:49:08,930 - DEBUG - Pending tasks: 4
+INFO: [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) running   LoadMySQLData()
+2024-04-29 02:49:08,930 - INFO - [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) running   LoadMySQLData()
+C:\Users\SANA JALGAONKAR\AppData\Local\Temp\ipykernel_2100\549144210.py:158: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
   sql_frame = pd.read_sql(read_data_query, conn)
-INFO: [pid 16712] Worker Worker(salt=9373937654, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=16712) done      LoadMySQLData()
-2024-04-27 04:00:57,303 - INFO - [pid 16712] Worker Worker(salt=9373937654, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=16712) done      LoadMySQLData()
+INFO: [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) done      LoadMySQLData()
+2024-04-29 02:49:09,291 - INFO - [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) done      LoadMySQLData()
 DEBUG: 1 running tasks, waiting for next task to finish
-2024-04-27 04:00:57,304 - DEBUG - 1 running tasks, waiting for next task to finish
+2024-04-29 02:49:09,292 - DEBUG - 1 running tasks, waiting for next task to finish
 INFO: Informed scheduler that task   LoadMySQLData__99914b932b   has status   DONE
-2024-04-27 04:00:57,304 - INFO - Informed scheduler that task   LoadMySQLData__99914b932b   has status   DONE
+2024-04-29 02:49:09,292 - INFO - Informed scheduler that task   LoadMySQLData__99914b932b   has status   DONE
 DEBUG: Asking scheduler for work...
-2024-04-27 04:00:57,304 - DEBUG - Asking scheduler for work...
+2024-04-29 02:49:09,292 - DEBUG - Asking scheduler for work...
 DEBUG: Pending tasks: 3
-2024-04-27 04:00:57,304 - DEBUG - Pending tasks: 3
-INFO: [pid 16712] Worker Worker(salt=9373937654, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=16712) running   TransformData()
-2024-04-27 04:00:57,304 - INFO - [pid 16712] Worker Worker(salt=9373937654, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=16712) running   TransformData()
+2024-04-29 02:49:09,292 - DEBUG - Pending tasks: 3
+INFO: [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) running   TransformData()
+2024-04-29 02:49:09,292 - INFO - [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) running   TransformData()
 -----------------------------------------------------------------------------
 Currently ExtractSocrataDataCSV is in progress
 -----------------------------------------------------------------------------
@@ -186,8 +184,8 @@ Column: off_road_description
 off_road_description
 Missing                                                             890
 PARKING LOT OF 13031 WISTERIA DRIVE                                   1
-PARKING LOT IN FRONT OF 18501 N. FREDERICK AVE                        1
 PARKING LOT OF 13850 GEORGIA AVE, SILVER SPRING, MD 20906             1
+PARKING LOT IN FRONT OF 18501 N. FREDERICK AVE                        1
 IN THE PARKING LOT OF STONEGATE ES                                    1
                                                                    ... 
 IFO 12044 CHERRY HILL ROAD IN PARKING LOT                             1
@@ -246,94 +244,92 @@ OTHER                         1
 Name: count, dtype: int64
 -----------------------------------------------------------------------------
 Column: traffic_control
-INFO: [pid 16712] Worker Worker(salt=9373937654, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=16712) done      TransformData()
-2024-04-27 04:00:57,338 - INFO - [pid 16712] Worker Worker(salt=9373937654, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=16712) done      TransformData()
+INFO: [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) done      TransformData()
+2024-04-29 02:49:09,327 - INFO - [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) done      TransformData()
 DEBUG: 1 running tasks, waiting for next task to finish
-2024-04-27 04:00:57,339 - DEBUG - 1 running tasks, waiting for next task to finish
+2024-04-29 02:49:09,327 - DEBUG - 1 running tasks, waiting for next task to finish
 INFO: Informed scheduler that task   TransformData__99914b932b   has status   DONE
-2024-04-27 04:00:57,339 - INFO - Informed scheduler that task   TransformData__99914b932b   has status   DONE
+2024-04-29 02:49:09,327 - INFO - Informed scheduler that task   TransformData__99914b932b   has status   DONE
 DEBUG: Asking scheduler for work...
-2024-04-27 04:00:57,339 - DEBUG - Asking scheduler for work...
+2024-04-29 02:49:09,327 - DEBUG - Asking scheduler for work...
 DEBUG: Pending tasks: 2
-2024-04-27 04:00:57,339 - DEBUG - Pending tasks: 2
-INFO: [pid 16712] Worker Worker(salt=9373937654, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=16712) running   LoadMongoDBData()
-2024-04-27 04:00:57,339 - INFO - [pid 16712] Worker Worker(salt=9373937654, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=16712) running   LoadMongoDBData()
-INFO: [pid 16712] Worker Worker(salt=9373937654, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=16712) done      LoadMongoDBData()
-2024-04-27 04:01:06,571 - INFO - [pid 16712] Worker Worker(salt=9373937654, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=16712) done      LoadMongoDBData()
+2024-04-29 02:49:09,327 - DEBUG - Pending tasks: 2
+INFO: [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) running   LoadMongoDBData()
+2024-04-29 02:49:09,327 - INFO - [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) running   LoadMongoDBData()
+INFO: [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) done      LoadMongoDBData()
+2024-04-29 02:49:18,772 - INFO - [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) done      LoadMongoDBData()
 DEBUG: 1 running tasks, waiting for next task to finish
-2024-04-27 04:01:06,571 - DEBUG - 1 running tasks, waiting for next task to finish
+2024-04-29 02:49:18,772 - DEBUG - 1 running tasks, waiting for next task to finish
 INFO: Informed scheduler that task   LoadMongoDBData__99914b932b   has status   DONE
-2024-04-27 04:01:06,571 - INFO - Informed scheduler that task   LoadMongoDBData__99914b932b   has status   DONE
+2024-04-29 02:49:18,773 - INFO - Informed scheduler that task   LoadMongoDBData__99914b932b   has status   DONE
 DEBUG: Asking scheduler for work...
-2024-04-27 04:01:06,571 - DEBUG - Asking scheduler for work...
+2024-04-29 02:49:18,773 - DEBUG - Asking scheduler for work...
 DEBUG: Pending tasks: 1
-2024-04-27 04:01:06,571 - DEBUG - Pending tasks: 1
-INFO: [pid 16712] Worker Worker(salt=9373937654, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=16712) running   ETLPipeline()
-2024-04-27 04:01:06,571 - INFO - [pid 16712] Worker Worker(salt=9373937654, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=16712) running   ETLPipeline()
+2024-04-29 02:49:18,773 - DEBUG - Pending tasks: 1
+INFO: [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) running   FetchMongoDBData()
+2024-04-29 02:49:18,773 - INFO - [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) running   FetchMongoDBData()
 C:\Users\SANA JALGAONKAR\AppData\Local\Programs\Python\Python312\Lib\site-packages\luigi\worker.py:426: UserWarning: Task LoadMongoDBData() without outputs has no custom complete() method
   is_complete = task.complete()
-ERROR: [pid 16712] Worker Worker(salt=9373937654, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=16712) failed    ETLPipeline()
+ERROR: [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) failed    FetchMongoDBData()
 Traceback (most recent call last):
   File "C:\Users\SANA JALGAONKAR\AppData\Local\Programs\Python\Python312\Lib\site-packages\luigi\worker.py", line 195, in run
     raise RuntimeError('Unfulfilled %s at run time: %s' % (deps, ', '.join(missing)))
 RuntimeError: Unfulfilled dependency at run time: LoadMongoDBData__99914b932b
-2024-04-27 04:01:06,572 - ERROR - [pid 16712] Worker Worker(salt=9373937654, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=16712) failed    ETLPipeline()
+2024-04-29 02:49:18,773 - ERROR - [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) failed    FetchMongoDBData()
 Traceback (most recent call last):
   File "C:\Users\SANA JALGAONKAR\AppData\Local\Programs\Python\Python312\Lib\site-packages\luigi\worker.py", line 195, in run
     raise RuntimeError('Unfulfilled %s at run time: %s' % (deps, ', '.join(missing)))
 RuntimeError: Unfulfilled dependency at run time: LoadMongoDBData__99914b932b
 DEBUG: 1 running tasks, waiting for next task to finish
-2024-04-27 04:01:06,572 - DEBUG - 1 running tasks, waiting for next task to finish
-INFO: Informed scheduler that task   ETLPipeline__99914b932b   has status   FAILED
-2024-04-27 04:01:06,574 - INFO - Informed scheduler that task   ETLPipeline__99914b932b   has status   FAILED
-DEBUG: Checking if ETLPipeline() is complete
-2024-04-27 04:01:06,574 - DEBUG - Checking if ETLPipeline() is complete
-C:\Users\SANA JALGAONKAR\AppData\Local\Programs\Python\Python312\Lib\site-packages\luigi\worker.py:426: UserWarning: Task ETLPipeline() without outputs has no custom complete() method
-  is_complete = task.complete()
+2024-04-29 02:49:18,774 - DEBUG - 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   FetchMongoDBData__99914b932b   has status   FAILED
+2024-04-29 02:49:18,775 - INFO - Informed scheduler that task   FetchMongoDBData__99914b932b   has status   FAILED
+DEBUG: Checking if FetchMongoDBData() is complete
+2024-04-29 02:49:18,776 - DEBUG - Checking if FetchMongoDBData() is complete
 DEBUG: Checking if LoadMongoDBData() is complete
-2024-04-27 04:01:06,574 - DEBUG - Checking if LoadMongoDBData() is complete
-INFO: Informed scheduler that task   ETLPipeline__99914b932b   has status   PENDING
-2024-04-27 04:01:06,574 - INFO - Informed scheduler that task   ETLPipeline__99914b932b   has status   PENDING
+2024-04-29 02:49:18,776 - DEBUG - Checking if LoadMongoDBData() is complete
+INFO: Informed scheduler that task   FetchMongoDBData__99914b932b   has status   PENDING
+2024-04-29 02:49:18,776 - INFO - Informed scheduler that task   FetchMongoDBData__99914b932b   has status   PENDING
 DEBUG: Checking if TransformData() is complete
-2024-04-27 04:01:06,574 - DEBUG - Checking if TransformData() is complete
+2024-04-29 02:49:18,776 - DEBUG - Checking if TransformData() is complete
 INFO: Informed scheduler that task   LoadMongoDBData__99914b932b   has status   PENDING
-2024-04-27 04:01:06,575 - INFO - Informed scheduler that task   LoadMongoDBData__99914b932b   has status   PENDING
+2024-04-29 02:49:18,776 - INFO - Informed scheduler that task   LoadMongoDBData__99914b932b   has status   PENDING
 INFO: Informed scheduler that task   TransformData__99914b932b   has status   DONE
-2024-04-27 04:01:06,575 - INFO - Informed scheduler that task   TransformData__99914b932b   has status   DONE
+2024-04-29 02:49:18,776 - INFO - Informed scheduler that task   TransformData__99914b932b   has status   DONE
 DEBUG: Asking scheduler for work...
-2024-04-27 04:01:06,575 - DEBUG - Asking scheduler for work...
+2024-04-29 02:49:18,776 - DEBUG - Asking scheduler for work...
 DEBUG: Pending tasks: 1
-2024-04-27 04:01:06,575 - DEBUG - Pending tasks: 1
-INFO: [pid 16712] Worker Worker(salt=9373937654, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=16712) running   ETLPipeline()
-2024-04-27 04:01:06,575 - INFO - [pid 16712] Worker Worker(salt=9373937654, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=16712) running   ETLPipeline()
-ERROR: [pid 16712] Worker Worker(salt=9373937654, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=16712) failed    ETLPipeline()
+2024-04-29 02:49:18,776 - DEBUG - Pending tasks: 1
+INFO: [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) running   FetchMongoDBData()
+2024-04-29 02:49:18,776 - INFO - [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) running   FetchMongoDBData()
+ERROR: [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) failed    FetchMongoDBData()
 Traceback (most recent call last):
   File "C:\Users\SANA JALGAONKAR\AppData\Local\Programs\Python\Python312\Lib\site-packages\luigi\worker.py", line 195, in run
     raise RuntimeError('Unfulfilled %s at run time: %s' % (deps, ', '.join(missing)))
 RuntimeError: Unfulfilled dependency at run time: LoadMongoDBData__99914b932b
-2024-04-27 04:01:06,575 - ERROR - [pid 16712] Worker Worker(salt=9373937654, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=16712) failed    ETLPipeline()
+2024-04-29 02:49:18,777 - ERROR - [pid 2100] Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) failed    FetchMongoDBData()
 Traceback (most recent call last):
   File "C:\Users\SANA JALGAONKAR\AppData\Local\Programs\Python\Python312\Lib\site-packages\luigi\worker.py", line 195, in run
     raise RuntimeError('Unfulfilled %s at run time: %s' % (deps, ', '.join(missing)))
 RuntimeError: Unfulfilled dependency at run time: LoadMongoDBData__99914b932b
 DEBUG: 1 running tasks, waiting for next task to finish
-2024-04-27 04:01:06,575 - DEBUG - 1 running tasks, waiting for next task to finish
-INFO: Informed scheduler that task   ETLPipeline__99914b932b   has status   FAILED
-2024-04-27 04:01:06,577 - INFO - Informed scheduler that task   ETLPipeline__99914b932b   has status   FAILED
+2024-04-29 02:49:18,777 - DEBUG - 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   FetchMongoDBData__99914b932b   has status   FAILED
+2024-04-29 02:49:18,779 - INFO - Informed scheduler that task   FetchMongoDBData__99914b932b   has status   FAILED
 DEBUG: Asking scheduler for work...
-2024-04-27 04:01:06,577 - DEBUG - Asking scheduler for work...
+2024-04-29 02:49:18,779 - DEBUG - Asking scheduler for work...
 DEBUG: Done
-2024-04-27 04:01:06,577 - DEBUG - Done
+2024-04-29 02:49:18,779 - DEBUG - Done
 DEBUG: There are no more tasks to run at this time
-2024-04-27 04:01:06,577 - DEBUG - There are no more tasks to run at this time
+2024-04-29 02:49:18,779 - DEBUG - There are no more tasks to run at this time
 DEBUG: There are 1 pending tasks possibly being run by other workers
-2024-04-27 04:01:06,577 - DEBUG - There are 1 pending tasks possibly being run by other workers
+2024-04-29 02:49:18,779 - DEBUG - There are 1 pending tasks possibly being run by other workers
 DEBUG: There are 1 pending tasks unique to this worker
-2024-04-27 04:01:06,577 - DEBUG - There are 1 pending tasks unique to this worker
+2024-04-29 02:49:18,779 - DEBUG - There are 1 pending tasks unique to this worker
 DEBUG: There are 1 pending tasks last scheduled by this worker
-2024-04-27 04:01:06,577 - DEBUG - There are 1 pending tasks last scheduled by this worker
-INFO: Worker Worker(salt=9373937654, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=16712) was stopped. Shutting down Keep-Alive thread
-2024-04-27 04:01:06,577 - INFO - Worker Worker(salt=9373937654, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=16712) was stopped. Shutting down Keep-Alive thread
+2024-04-29 02:49:18,779 - DEBUG - There are 1 pending tasks last scheduled by this worker
+INFO: Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) was stopped. Shutting down Keep-Alive thread
+2024-04-29 02:49:18,779 - INFO - Worker Worker(salt=8765514442, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=2100) was stopped. Shutting down Keep-Alive thread
 INFO: 
 ===== Luigi Execution Summary =====
 
@@ -344,13 +340,13 @@ Scheduled 5 tasks of which:
     - 1 LoadMySQLData()
     - 1 TransformData()
 * 1 failed:
-    - 1 ETLPipeline()
+    - 1 FetchMongoDBData()
 
 This progress looks :( because there were failed tasks
 
 ===== Luigi Execution Summary =====
 
-2024-04-27 04:01:06,578 - INFO - 
+2024-04-29 02:49:18,780 - INFO - 
 ===== Luigi Execution Summary =====
 
 Scheduled 5 tasks of which:
@@ -360,13 +356,13 @@ Scheduled 5 tasks of which:
     - 1 LoadMySQLData()
     - 1 TransformData()
 * 1 failed:
-    - 1 ETLPipeline()
+    - 1 FetchMongoDBData()
 
 This progress looks :( because there were failed tasks
 
 ===== Luigi Execution Summary =====
 
-2024-04-27 04:01:06,578 - INFO - ETL pipeline executed successfully.
+2024-04-29 02:49:18,780 - INFO - ETL pipeline executed successfully.
 traffic_control
 NO CONTROLS                454
 TRAFFIC SIGNAL             299
@@ -781,47 +777,9 @@ Collections in montgomery :
 drivers
 non_motorists
 non_motorists_dataset
+incidents
 JSON data successfully loaded into MongoDB collection 'incidents' in database 'montgomery'.
-Total number of records in the collection: 1000
-2024-04-27 04:59:45,321 - INFO - logging configured by default settings
-DEBUG: Checking if ETLPipeline() is complete
-2024-04-27 04:59:45,327 - DEBUG - Checking if ETLPipeline() is complete
-INFO: Informed scheduler that task   ETLPipeline__99914b932b   has status   DONE
-2024-04-27 04:59:45,328 - INFO - Informed scheduler that task   ETLPipeline__99914b932b   has status   DONE
-INFO: Done scheduling tasks
-2024-04-27 04:59:45,328 - INFO - Done scheduling tasks
-INFO: Running Worker with 1 processes
-2024-04-27 04:59:45,328 - INFO - Running Worker with 1 processes
-DEBUG: Asking scheduler for work...
-2024-04-27 04:59:45,328 - DEBUG - Asking scheduler for work...
-DEBUG: Done
-2024-04-27 04:59:45,328 - DEBUG - Done
-DEBUG: There are no more tasks to run at this time
-2024-04-27 04:59:45,328 - DEBUG - There are no more tasks to run at this time
-INFO: Worker Worker(salt=1665043972, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=20636) was stopped. Shutting down Keep-Alive thread
-2024-04-27 04:59:45,328 - INFO - Worker Worker(salt=1665043972, workers=1, host=LAPTOP-JCBDQEO9, username=SANA JALGAONKAR, pid=20636) was stopped. Shutting down Keep-Alive thread
-INFO: 
-===== Luigi Execution Summary =====
-
-Scheduled 1 tasks of which:
-* 1 complete ones were encountered:
-    - 1 ETLPipeline()
-
-Did not run any tasks
-This progress looks :) because there were no failed tasks or missing dependencies
-
-===== Luigi Execution Summary =====
-
-2024-04-27 04:59:45,329 - INFO - 
-===== Luigi Execution Summary =====
-
-Scheduled 1 tasks of which:
-* 1 complete ones were encountered:
-    - 1 ETLPipeline()
-
-Did not run any tasks
-This progress looks :) because there were no failed tasks or missing dependencies
-
-===== Luigi Execution Summary =====
-
-2024-04-27 04:59:45,329 - INFO - ETL pipeline executed successfully.
+Total number of records in the collection: 7000
+-----------------------------------------------------------------------------
+Data Loaded into MongoDB Moving onto fetching
+-----------------------------------------------------------------------------
